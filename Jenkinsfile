@@ -6,7 +6,7 @@ pipeline {
                 checkout([$class: 'GitSCM',
                           branches: [[name: '*/main']],
                           userRemoteConfigs: [[url: 'https://github.com/sashshaikh12/CC_Jenkins_CS236.git']]])
-            } // <- This was missing!  VERY IMPORTANT.
+             // <- This was missing!  VERY IMPORTANT.
         } // <- and this one
 
         stage('Build') {
